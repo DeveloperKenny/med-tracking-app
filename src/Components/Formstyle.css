@@ -1,0 +1,49 @@
+.card {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-list {
+    width: 300px;
+    max-width: 500px;
+    margin-top: 25px;
+}
+
+.card-body {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+label {
+    display: block;
+}
+
+.ator {
+    float: right;
+    position: relative;
+}
+
+.heart-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.35rem;
+    margin: 15px;
+    font-weight: 700;
+}
+
+.heart-icon {
+    width: 40px;
+    margin: 10px;
+}
+
+.user-name {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 40px;
+
+}
+
+.user-pic {
+    width: 40px;
+}
