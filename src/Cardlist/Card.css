@@ -1,0 +1,16 @@
+label {
+    display: block;
+}
+.ator {
+    float: right;
+    position: relative;
+}
+
+.card {
+    margin-bottom: 10px;
+}
+
+
+.reset-btn {
+    float: right;
+}

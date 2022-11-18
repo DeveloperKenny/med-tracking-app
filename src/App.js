@@ -1,30 +1,44 @@
 import React from 'react';
-import {Navbar} from './Components/Navbar'
-import { Atorvastatin  } from './Components/Cards.js/Atorvastatin';
-import { Furosemide  } from './Components/Cards.js/Furosemide';
-import { Losartan  } from './Components/Cards.js/Losartan';
-import { Metoprolol  } from './Components/Cards.js/Metoprolol';
-import { Rivaroxaban  } from './Components/Cards.js/Rivaroxaban';
-import { Spironolactone  } from './Components/Cards.js/Spironolactone';
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+
+import  Medication  from './Page/Medication';
+import History from './Page/History';
+import Contact from './Page/Contact';
+import Home from './Page/Home';
+
+import { Navbar } from './Navbar/Navbar';
+import { Card } from './Cardlist/Card';
+
+
 import './App.css';
+import '../src/Page/Page.css';
 
 function App() {
   return (
-
-            <div>
-              <Navbar />
-                <div className="contianer morning-container">
-                  <div className="card morning-card">
-                  <div className="label-morning">Morning Meds</div>
-                  <Atorvastatin />
-                  <Furosemide />
-                  <Losartan />
-                  <Metoprolol />
-                  <Rivaroxaban />
-                  <Spironolactone />
-                  </div>
-                </div>
-            </div>
+      <div>
+        <Navbar />
+        <BrowserRouter>
+        <nav>
+        <div className="container">
+          <div className="card">
+          <div className="card-body link-body">
+          <Link className="link btn btn-info" to="/home">Home</Link>
+          <Link className="link btn btn-info"  to="/medication">Medication</Link>
+          <Link className="link btn btn-info" to="/history">History</Link>
+          <Link className="link btn btn-info" to="/contact">Contact</Link>
+          </div>
+          </div>
+          </div>
+          </nav>
+        <Routes>
+        <Route path="/home" element={<Home />} />
+        <Route path="/medications" element={<Medication />} />
+        <Route path="/history" element={<History />} />
+        <Route path='/contact' element={<Contact />} />
+        </Routes>       
+        </BrowserRouter>
+       
+      </div>
   );
 }
 

@@ -1,57 +1,15 @@
+.link {
+  margin-left: 1px;
+  font-size: 10px;
+}
 
+.container {
+  margin-left: auto;
+  margin-right: auto;
 
+}
 
-
-
-
-@media only screen and (min-width: 315px){
-
-  .container {
-    margin-top: 5px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .card {
-    margin-bottom: 10px;
-  }
-  .nav-user {
-    text-align: center;
-  }
-
-  .label-morning {
-    padding: 20px;
-    font-weight: 700;
-    color:#151B40;
-  }
-
-  .morning-container {
-    margin-top: 50px;
-    max-width: 340px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  label {
-    display:block;
-    padding-left: 15px;
-    text-indent: -15px;
-  }
-  .complete-box {
-    float: right;
-    position: relative;
-    vertical-align: bottom;
-  }
-
-  .card-list {
-    background-color: #0B3ED9;
-    color: white;
-  }
-
-  .card-body {
-    font-weight: 600;
-  }
-
-  complete-box {
-    border-color: white;
-  }
+.link-body {
+  margin-left: auto;
+  margin-right: auto;
 }
